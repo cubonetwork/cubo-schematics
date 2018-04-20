@@ -17,16 +17,12 @@ Generate a component
 
 ```sh
 ng generate schematics:component componentName
-// alias
-ng generate schematics:c componentName
 ```
 
 Generate a page
 
 ```sh
 ng generate schematics:page pageName
-// alias
-ng generate schematics:p pageName
 ```
 
 ## License
