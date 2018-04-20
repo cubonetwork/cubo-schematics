@@ -29,7 +29,7 @@ ng generate cubo-schematics:page pageName
 
 ### Component
 
-```sh
+```text
 --inlineStyle, -s              Specifies if the style will be in the ts file
 --inlineTemplate, -t           Specifies if the template will be in the ts file
 --viewEncapsulation, -v <type> Specifies the view encapsulation strategy
@@ -41,7 +41,7 @@ ng generate cubo-schematics:page pageName
 
 ### Page
 
-```sh
+```text
 --inlineStyle, -s              Specifies if the style will be in the ts file
 --inlineTemplate, -t           Specifies if the template will be in the ts file
 --viewEncapsulation, -v <type> Specifies the view encapsulation strategy
