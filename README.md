@@ -16,13 +16,13 @@ npm install ngx-cubo-schematics
 Generate a component
 
 ```sh
-ng generate schematics:component componentName
+ng generate cubo-schematics:component componentName
 ```
 
 Generate a page
 
 ```sh
-ng generate schematics:page pageName
+ng generate cubo-schematics:page pageName
 ```
 
 ## License
