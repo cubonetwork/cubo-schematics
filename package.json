@@ -8,7 +8,10 @@
     "test": "npm run build && jasmine **/*_spec.js"
   },
   "keywords": [
-    "schematics"
+    "schematics",
+    "angular-cli",
+    "ngx",
+    "angular"
   ],
   "author": "Cubo",
   "license": "MIT",
