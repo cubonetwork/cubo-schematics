@@ -1,14 +1,14 @@
-# ngx-schematics
+# cubo-schematics
 
 > A schematics to build components and pages on angular-cli
 
-[![license](https://img.shields.io/github/license/cubonetwork/ngx-schematics.svg)](./license.md)
-[![GitHub contributors](https://img.shields.io/github/contributors/cubonetwork/ngx-schematics.svg)](https://github.com/cubonetwork/ngx-schematics/graphs/contributors)
+[![license](https://img.shields.io/github/license/cubonetwork/cubo-schematics.svg)](./license.md)
+[![GitHub contributors](https://img.shields.io/github/contributors/cubonetwork/cubo-schematics.svg)](https://github.com/cubonetwork/cubo-schematics/graphs/contributors)
 
 ## Install
 
 ```sh
-npm install ngx-cubo-schematics
+npm install cubo-schematics
 ```
 
 ## Usage
