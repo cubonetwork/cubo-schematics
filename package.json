@@ -4,7 +4,7 @@
   "description": "A schematics to angular-cli",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "prepare": "npm i",
+    "release": "np",
     "prepublishOnly": "npm run build",
     "test": "npm run build && jasmine **/*_spec.js"
   },
@@ -28,6 +28,7 @@
     "@types/jasmine": "^2.6.0",
     "@types/node": "^8.0.31",
     "jasmine": "^2.8.0",
+    "np": "^2.20.1",
     "typescript": "~2.7.2"
   }
 }
