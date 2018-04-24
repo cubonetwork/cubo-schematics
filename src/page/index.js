@@ -10,12 +10,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@angular-devkit/core");
 const schematics_1 = require("@angular-devkit/schematics");
 const ts = require("typescript");
-const ast_utils_1 = require("../utility/ast-utils");
-const change_1 = require("../utility/change");
-const config_1 = require("../utility/config");
-const find_module_1 = require("../utility/find-module");
-const parse_name_1 = require("../utility/parse-name");
-const validation_1 = require("../utility/validation");
+const ast_utils_1 = require("@schematics/angular/utility/ast-utils");
+const change_1 = require("@schematics/angular/utility/change");
+const config_1 = require("@schematics/angular/utility/config");
+const find_module_1 = require("@schematics/angular/utility/find-module");
+const parse_name_1 = require("@schematics/angular/utility/parse-name");
+const validation_1 = require("@schematics/angular/utility/validation");
 function buildSelector(options, projectPrefix) {
     let selector = core_1.strings.dasherize(options.name);
     if (options.prefix) {
