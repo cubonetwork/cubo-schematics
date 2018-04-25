@@ -1,7 +1,7 @@
-import { Component, ViewEncapsulation, ChangeDetectionStrategy, OnInit } from '@angular/core';
+import { Component, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-  selector: 'page-',<% if(inlineTemplate) { %>
+  selector: 'page-<%= selector %>',<% if(inlineTemplate) { %>
   template: `
     <p>
       <%= dasherize(name) %> works!
@@ -13,12 +13,4 @@ import { Component, ViewEncapsulation, ChangeDetectionStrategy, OnInit } from '@
   encapsulation: ViewEncapsulation.<%= viewEncapsulation %><% } if (changeDetection !== 'Emulated') { %>,
   changeDetection: ChangeDetectionStrategy.<%= changeDetection %><% } %>
 })
-export class Page<%= classify(name) %>Component implements OnInit {
-  constructor() {
-
-  }
-
-  ngOnInit() {
-
-  }
-}
+export class <%= classify(name) %>Component { }
