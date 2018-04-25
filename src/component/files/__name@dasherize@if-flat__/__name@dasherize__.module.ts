@@ -5,8 +5,7 @@ import { <%= classify(name) %>Component } from './<%= dasherize(name) %>.compone
 
 @NgModule({
   imports: [
-    CommonModule,
-    <%= classify(name) %>Component
+    CommonModule
   ],
   exports: [
     <%= classify(name) %>Component
