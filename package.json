@@ -4,9 +4,9 @@
   "description": "A schematics to angular-cli",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "release": "np --no-cleanup",
+    "release": "np --no-cleanup --yolo",
     "prepublishOnly": "npm run build",
-    "test": "npm run build && jasmine **/*.spec.js"
+    "test": "jasmine **/*.spec.js"
   },
   "keywords": [
     "schematics",
