@@ -1,9 +1,10 @@
 {
   "name": "cubo-schematics",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "A schematics to angular-cli",
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "deploy": "npm run build && npm publish",
     "prepublishOnly": "npm run build",
     "test": "jasmine **/*.spec.js"
   },
@@ -17,16 +18,16 @@
   "license": "MIT",
   "schematics": "./src/collection.json",
   "dependencies": {
-    "@angular-devkit/schematics": "^0.5.7",
-    "@schematics/angular": "^0.5.7",
-    "rxjs": "^6.0.0-rc.0"
+    "@angular-devkit/schematics": "^0.6.3",
+    "@schematics/angular": "^0.6.3",
+    "rxjs": "^6.1.0"
   },
   "devDependencies": {
-    "@angular-devkit/core": "^0.5.7",
-    "@angular-devkit/schematics-cli": "^0.5.7",
-    "@types/jasmine": "^2.6.0",
-    "@types/node": "^8.0.31",
-    "jasmine": "^2.8.0",
-    "typescript": "~2.7.2"
+    "@angular-devkit/core": "^0.6.3",
+    "@angular-devkit/schematics-cli": "^0.6.3",
+    "@types/jasmine": "^2.8.7",
+    "@types/node": "^10.1.2",
+    "jasmine": "^3.1.0",
+    "typescript": "~2.8.3"
   }
 }
