@@ -77,9 +77,14 @@
     }, 
     "root": {
       "type": "boolean",
-      "description": "Specifies if a root module is generated",
+      "description": "Specifies if a root module is generated.",
       "default": false,
       "alias": "r"
+    },
+    "translate": {
+      "type": "boolean",
+      "description": "Flag to indicate if the component have structure of translate.",
+      "default": false
     }
   },
   "required": []
