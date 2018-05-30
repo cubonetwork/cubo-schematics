@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, ChangeDetectionStrategy<% if(translate) { %>, Injector<% } %> } from '@angular/core';
-<% if(translate) { %> import { PageBaseComponent } from '@app/core/page-base.component';<% } %>
+<% if(translate) { %> import { CoreComponent } from '@app/core/core.component';<% } %>
 
 @Component({
   selector: '<%= dasherize(name) %>',<% if(inlineTemplate) { %>
@@ -14,7 +14,7 @@ import { Component, ViewEncapsulation, ChangeDetectionStrategy<% if(translate) {
   encapsulation: ViewEncapsulation.<%= viewEncapsulation %><% } if (changeDetection !== 'Emulated') { %>,
   changeDetection: ChangeDetectionStrategy.<%= changeDetection %><% } %>
 })
-export class <%= classify(name) %>Component <% if(translate) { %> extends PageBaseComponent<% } %>{
+export class <%= classify(name) %>Component <% if(translate) { %> extends CoreComponent<% } %>{
   <% if(translate) { %>
   constructor(
     private injector: Injector
