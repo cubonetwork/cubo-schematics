@@ -20,17 +20,14 @@ export function createTranslateLoader() {
 @NgModule({
   imports: [
     CommonModule,
-    <% if(translate) { %>
-    TranslateModule.forChild({
+    <% if(translate) { %>TranslateModule.forChild({
       loader: {
         provide: TranslateLoader,
         useFactory: (createTranslateLoader)
       },
       isolate: true
-    }),
-    <% } %>
-    <% if(!children) { %>
-    <%= classify(name) %>Routing<% } %>
+    }),<% } %>
+    <% if(!children) { %><%= classify(name) %>Routing<% } %>
   ],
   <% if(children) { %>exports: [
     <%= classify(name) %>Component
