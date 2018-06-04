@@ -5,7 +5,7 @@ import { <%= classify(name) %>Component } from './<%= dasherize(name) %>.compone
 export const <%= classify(name) %>Routes: Routes = [
   {
     path: '',
-    component: <%= classify(name) %>Component,<% if(root) { %>
+    component: <%= classify(name) %>Component<% if(root) { %>,
     children: [
       {
         path: 'childrenpath',
