@@ -50,6 +50,7 @@ ng generate cubo-schematics:page pageName
 --styleext <type>              The file extension to be used for style files
 --spec <boolean>               Specifies if a spec file is generated
 --root <boolean>               Specifies if a root module is generated
+--translate <boolean>          Flag to indicate if the component have structure of translate.
 ```
 
 ## License

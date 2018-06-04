@@ -60,4 +60,8 @@ export interface Schema {
    * Specifies if a root module is generated
    */
   root?: boolean;
+  /**
+   * Flag to indicate if the component have structure of translate
+   */
+  translate?: boolean
 }

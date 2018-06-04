@@ -48,6 +48,7 @@ function default_1(options) {
             options.inlineStyle ? schematics_1.filter(path => !path.endsWith('.__styleext__')) : schematics_1.noop(),
             options.children ? schematics_1.filter(path => !path.endsWith('.routing')) : schematics_1.noop(),
             options.inlineTemplate || options.root ? schematics_1.filter(path => !path.endsWith('.html')) : schematics_1.noop(),
+            options.translate ? schematics_1.noop() : schematics_1.filter(path => !path.includes('i18n')),
             schematics_1.template(Object.assign({}, core_1.strings, { 'if-flat': (s) => options.flat ? '' : s }, options)),
             schematics_1.move(parsedPath.path),
         ]);

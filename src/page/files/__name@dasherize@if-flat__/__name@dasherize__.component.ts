@@ -1,4 +1,5 @@
-import { Component, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ViewEncapsulation, ChangeDetectionStrategy<% if(translate) { %>, Injector<% } %> } from '@angular/core';
+<% if(translate) { %> import { CoreComponent } from '@app/core/core.component';<% } %>
 
 @Component({
   selector: '<%= dasherize(name) %>',<% if(inlineTemplate) { %>
@@ -13,4 +14,12 @@ import { Component, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/
   encapsulation: ViewEncapsulation.<%= viewEncapsulation %><% } if (changeDetection !== 'Emulated') { %>,
   changeDetection: ChangeDetectionStrategy.<%= changeDetection %><% } %>
 })
-export class <%= classify(name) %>Component { }
+export class <%= classify(name) %>Component <% if(translate) { %> extends CoreComponent<% } %>{
+  <% if(translate) { %>
+  constructor(
+    private injector: Injector
+  ) {
+    super(injector);
+  }
+  <% } %>
+}
