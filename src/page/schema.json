@@ -84,7 +84,14 @@
     "translate": {
       "type": "boolean",
       "description": "Flag to indicate if the component have structure of translate.",
-      "default": false
+      "default": false,
+      "alias": "i18n"
+    },
+    "children": {
+      "type": "boolean",
+      "description": "Flag to indicate if the component is a children.",
+      "default": false,
+      "alias": "cc"
     }
   },
   "required": []
