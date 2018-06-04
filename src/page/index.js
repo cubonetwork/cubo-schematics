@@ -46,7 +46,7 @@ function default_1(options) {
         const templateSource = schematics_1.apply(schematics_1.url('./files'), [
             options.spec ? schematics_1.noop() : schematics_1.filter(path => !path.endsWith('.spec.ts')),
             options.inlineStyle ? schematics_1.filter(path => !path.endsWith('.__styleext__')) : schematics_1.noop(),
-            options.children ? schematics_1.noop() : schematics_1.filter(path => !path.includes('.routing')),
+            options.children ? schematics_1.noop() : schematics_1.filter(path => !path.endsWith('.routing.ts')),
             options.inlineTemplate || options.root ? schematics_1.filter(path => !path.endsWith('.html')) : schematics_1.noop(),
             options.translate ? schematics_1.noop() : schematics_1.filter(path => !path.includes('i18n')),
             schematics_1.template(Object.assign({}, core_1.strings, { 'if-flat': (s) => options.flat ? '' : s }, options)),

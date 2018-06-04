@@ -16,7 +16,6 @@ export function createTranslateLoader() {
     'pt': (<any> pt)
   });
 }<% } %>
-
 @NgModule({
   imports: [
     CommonModule,
